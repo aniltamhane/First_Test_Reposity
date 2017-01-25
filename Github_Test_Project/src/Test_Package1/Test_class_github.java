@@ -25,6 +25,26 @@ public class Test_class_github {
 		 }
 		
 	} 
+	
+	public void number_of_chars(){
+		String test = "anilaopooi";
+		int count = 0;
+		char c;
+		
+		for (char i='a';i<='z';i++){
+			count = 0;
+			for(int j=0;j<test.length();j++){
+				c = test.charAt(j);
+				if(c == i){
+					count++;
+				}
+			}
+			if (count != 0){
+				System.out.println(i + " is repeated " + count +" times");
+			}
+		}
+		
+	}
 
 	/**
 	 * @param args
