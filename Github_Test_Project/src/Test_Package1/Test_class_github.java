@@ -1,42 +1,41 @@
 package Test_Package1;
 
-
-
 public class Test_class_github {
 	
 	
 	public void palindrome_number(){
 		int r,sum=0,temp;    
-		  int n=102; //It is the number variable to be checked for palindrome  
+		  int n=101; //It is the number variable to be checked for Palindrome  
 		  
 		  temp=n;    
 		  while(n>0){    
 		   r=n%10;  //getting remainder  
 		   sum=(sum*10)+r;    
 		   n=n/10;    
-		   
+		  } 
 		  if(temp==sum) {   
-		   System.out.println("Palindrome number ");
+		   System.out.println("Palindrome number");
 		  }
 		  else    
 		  {
 			  System.out.println("Not palindrome");    
 		  }
-		 }
+		 
 		
 	} 
 	
 	public void number_of_chars(){
 		String test = "anilaopooi";
 		int count = 0;
-		char c;
+	//	char c;
 		
 		for (char i='a';i<='z';i++){
 			count = 0;
 			for(int j=0;j<test.length();j++){
-				c = test.charAt(j);
-				if(c == i){
+			//	c = test.charAt(j);
+				if(i == test.charAt(j)){
 					count++;
+							
 				}
 			}
 			if (count != 0){
@@ -59,5 +58,8 @@ public class Test_class_github {
 			System.out.println(sum);
 		}
 		
+		Test_class_github num_char = new Test_class_github();
+		num_char.number_of_chars();
+		num_char.palindrome_number();
 	}
 }
