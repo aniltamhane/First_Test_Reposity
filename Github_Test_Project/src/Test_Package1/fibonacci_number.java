@@ -9,7 +9,7 @@ public class fibonacci_number {
 		// TODO Auto-generated method stub
 		
 		int count=10, num1=0, num2=1,num3=0;
-		System.out.println("Fibonacci numbers are: ");
+		System.out.println("Fibonacci numbers are : ");
 		System.out.println(num1);
 		for (int i=0;i<count;i++){
 			num3= num1+num2;
