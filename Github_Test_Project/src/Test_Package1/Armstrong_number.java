@@ -2,6 +2,8 @@ package Test_Package1;
 
 import java.util.Scanner;
 
+//Author : Anil
+
 public class Armstrong_number {
 
 	public static void main(String[] args) {
