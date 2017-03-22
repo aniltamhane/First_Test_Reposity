@@ -10,18 +10,11 @@ public class reverse_array {
 		// TODO Auto-generated method stub
 		
 		int[] nums = {1,2,3,4,10,7};
-		int[] arr_reverse = new int[nums.length];
-		int i = nums.length, j=0;
+	
+		for (int i=nums.length-1; i >= 0;i--){
+			System.out.println(nums[i]);
+		}
 		
-		while(j<nums.length){
-			arr_reverse[i-1] = nums[j];
-			i--;
-			j++;
-		}
-				
-		for (int k=0; k< arr_reverse.length;k++){
-			System.out.println(arr_reverse[k]);
-		}
 				
 	}
 
